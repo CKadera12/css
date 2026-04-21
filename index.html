@@ -39,7 +39,6 @@
 
   /* Outer grid-line frame that echoes the mockup */
   .frame {
-    max-width: var(--max);
     margin: 0 auto;
     border-left: 1px solid var(--rule);
     border-right: 1px solid var(--rule);
@@ -130,7 +129,7 @@
     height: clamp(340px, 48vw, 640px);
     overflow: hidden;
     border-bottom: 1px solid var(--rule);
-    background: #f4f4f3;
+    background: var(--bg);
     position: relative;
     display: flex;
     align-items: center;

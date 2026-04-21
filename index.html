@@ -86,7 +86,7 @@
   .hero h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
-    font-size: clamp(40px, 6vw, 84px);
+    font-size: clamp(32px, 4vw, 60px);
     line-height: 1.05;
     letter-spacing: -0.015em;
     color: var(--ink);
@@ -332,7 +332,7 @@
           <button class="acc-header" aria-expanded="true">
             <span>1. Maintenance and Repair</span>
             <span class="acc-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M12 5l-6 6M12 5l6 6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M12 19l-6-6M12 19l6-6"/></svg>
             </span>
           </button>
           <div class="acc-body">
@@ -549,15 +549,11 @@
       document.querySelectorAll('.acc-item').forEach(i => {
         i.classList.remove('open');
         i.querySelector('.acc-header').setAttribute('aria-expanded', 'false');
-        const svg = i.querySelector('.acc-icon svg path');
-        if (svg) svg.setAttribute('d', 'M12 5v14M12 19l-6-6M12 19l6-6');
       });
 
       if (!isOpen) {
         item.classList.add('open');
         btn.setAttribute('aria-expanded', 'true');
-        const svg = item.querySelector('.acc-icon svg path');
-        if (svg) svg.setAttribute('d', 'M12 19V5M12 5l-6 6M12 5l6 6');
       }
     });
   });

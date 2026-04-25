@@ -66,12 +66,14 @@
     border-bottom: 1px solid var(--rule);
   }
   .logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 0.02em;
-    color: var(--ink);
+    display: inline-block;
+    line-height: 0;
     text-decoration: none;
+  }
+  .logo img {
+    height: 32px;
+    width: auto;
+    display: block;
   }
 
   /* Hero */
@@ -314,7 +316,7 @@
   <div class="frame">
 
     <header>
-      <a href="#" class="logo">CSS</a>
+      <a href="#" class="logo" aria-label="CSS — Complete Semiconductor Solutions"><img src="logo.svg" alt="CSS — Complete Semiconductor Solutions" /></a>
     </header>
 
     <!-- HERO -->
